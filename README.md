@@ -8,14 +8,14 @@ The Task
 ----------
 ### Get All Prime Factors
 
-You have to code a function `get_all_prime_factors` wich takes an integer as a parameter and returns an array containing its prime decomposition by ascending factors. If a factor appears multiple times in the decomposition it should appear as many time in the array.
+You have to code a function `get_all_prime_factors` which takes an integer as a parameter and returns a list containing its prime decomposition by ascending factors. If a factor appears multiple times in the decomposition it should appear as many time in the list.
 
 ### Get Unique Prime Factors With Count
 You should also write `get_unique_prime_factors_with_count`, a function which will return a list containing two lists: one with prime numbers appearing in the decomposition and the other containing their respective power.
 
 ### Get Unique Prime Factors With Products
 
-You should also write `get_unique_prime_factors_with_products` which returns an array containing the prime factors to their respective powers.
+You should also write `get_unique_prime_factors_with_products` which returns a list containing the prime factors to their respective powers.
 
 ### Examples
 `get_all_prime_factors(100)  # [2,2,5,5]`
@@ -34,7 +34,12 @@ If `n=0`, functions should return `[]`, `[[],[]]` and `[]` respectively.
 If `n=1`, functions should return `[1]`, `[[1],[1]]`, `[1]` respectively.
 If `n=2`, functions should return `[2]`, `[[2],[1]]`, `[2]` respectively.
 
-The result for `n=2` is normal. The result for `n=1` is arbitrary and has been chosen to return a usefull result. The result for `n=0` is also arbitrary but can not be chosen to be both usefull and intuitive. (`[[0],[0]]` would be meaningfull but won't work for general use of decomposition, `[[0],[1]]` would work but is not intuitive.)
+The result for `n=2` is normal. The result for `n=1` is arbitrary and has been chosen to return a useful result. The result for `n=0` is also arbitrary but cannot be chosen to be both useful and intuitive. (`[[0],[0]]` would be meaningful but won't work for general use of decomposition, `[[0],[1]]` would work but is not intuitive.)
+
+
+Running Tests
+----------
+Tests are located in the `tests` directory. To run Prime decomposition related tests use `python -m unittest tests.test_prime`
 
 
 Authors
